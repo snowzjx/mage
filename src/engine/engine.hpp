@@ -182,6 +182,7 @@ namespace mage::engine {
             // typename ProtEngine::Wire* buffer = c.write<typename ProtEngine::Wire>(num_wires);
             Wire* buffer = c.write<Wire>(num_wires);
             std::copy(from, from + num_wires, buffer);
+            std::cout << "network_buffer_send. To Worder ID: " << who << ", Wire: " << from << ", Size: " << num_wires << "." << std::endl;
         }
 
         /**
